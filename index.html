@@ -280,6 +280,10 @@ img {
 .name {
     color: #B8B8B8;
 }
+
+#togglebutton {
+    transition: 1.5s;
+}
     </style>
     <head>
         <title>EmpTech</title>
@@ -297,7 +301,7 @@ img {
                             <li><a href="index.html">Home</a></li>
                             <li><a href="waffen.html">Lead</a></li>
                             <li><a href="documentaton.html">Documentation</a></li>
-                            <li><button id="darkmode"><i class="fa-regular fa-5x fa-sun"></button></i></li>
+                            <li><button id="darkmode"><i class="fa-regular fa-5x fa-moon" id="togglebutton"></button></i></li>
                         </ul>
                     </nav>
                 </div>
@@ -362,6 +366,11 @@ img {
                     document.getElementById("github").src = 'https://media.discordapp.net/attachments/766879854842871832/1025000143432470558/GitHub-Mark-32px.png'
                 } else {
                     document.getElementById("github").src = 'https://media.discordapp.net/attachments/766879854842871832/1024649323239182376/unknown.png'
+                }
+                if (document.getElementById("togglebutton").className == 'fa-regular fa-5x fa-moon') {
+                    document.getElementById("togglebutton").className = 'fa-regular fa-5x fa-sun';
+                } else {
+                    document.getElementById("togglebutton").className = 'fa-regular fa-5x fa-moon';
                 }
             }
         </script>

@@ -205,7 +205,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="waffen.html">Lead</a></li>
                             <li><a href="documentaton.html">Documentation</a></li>
-                            <li><button id="darkmode"><i class="fa-regular fa-5x fa-sun"></button></i></li>
+                            <li><button id="darkmode"><i class="fa-regular fa-5x fa-moon" id="togglebutton"></button></i></li>
                         </ul>
                     </nav>
                 </div>
@@ -223,6 +223,11 @@
             var dark = document.getElementById("darkmode");
             dark.onclick = function(){
                 document.body.classList.toggle("dark-theme");
+                if (document.getElementById("togglebutton").className == 'fa-regular fa-5x fa-moon') {
+                    document.getElementById("togglebutton").className = 'fa-regular fa-5x fa-sun';
+                } else {
+                    document.getElementById("togglebutton").className = 'fa-regular fa-5x fa-moon';
+                }
             }
             </script>
     </body>

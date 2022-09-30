@@ -1,0 +1,10 @@
+website plans
+- make a section at the bottom of the website where your contacts are located (email, telephone number)
+- make a loading animation 
+- make the navigation highlight the page you currently are on (e.g. home.html > home is highlighted)
+- make a documentation page (documenting how you built the website, take synapse as an example)
+
+done: 
+- create separate html pages for each dudes (waffen.html, jf.html, jhon.html, sasen.html, balbeo.html)
+- picture size (218 x 197)
+- make a dark mode/day mode (with javascript)
