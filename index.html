@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <style>
-    :root {
+    <style>    :root {
 
         --primary-color: #1b1b32;
         --secondary-color: #FFA500;
@@ -24,14 +23,14 @@
         }
 
         body {
-    font-family: arial;
+            font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: var(--primary-color);
+    
     border-style: solid;
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    border-color: var(--secondary-color);
+    border-bottom-color: #1b1b32;
     transition: (10.2s);
 }
 
@@ -55,7 +54,7 @@ nav ul {
     margin-right: 70px;
 }
 
-h1 {
+#project-title {
     position: absolute;
     top: 10px;
 }
@@ -149,10 +148,6 @@ nav ul li a {
     box-shadow: inset 280px 0 0 0 var(--tertiary-color);
 }
 
-h2 {
-    color: var(--secondary-color);
-    margin-bottom: 50px;
-}
 
 .section:hover {
     transform: scale(1.1);
@@ -284,95 +279,108 @@ img {
 #togglebutton {
     transition: 1.5s;
 }
-    </style>
+.navigation-bar {
+    border-style: solid;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-top-color: #FFA500;
+
+}
+.container {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/766879854842871832/1026782358696890388/04200_twilightislands_1366x768.jpg);
+}
+
+.caloocan {
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+
+}
+
+.navigation-bar {
+    background-color: #1b1b32;
+    color: #d0d0d5;
+    padding: 10px;
+
+}
+
+.caloocan li:not(:first-of-type) {
+    margin-left: 30px;
+}
+
+.caloocan li {
+    padding-bottom: 10px;
+}
+
+
+
+</style>
     <head>
-        <title>EmpTech</title>
-        <link rel="styleshet" href="day_dark_mode.css">
         <link rel="stylesheet" href="css/all.min.css">
     </head>
     <body>
         <div class="header">
             <div class="about">
                 <div class="navigation">
-                    <h1>EMPTECH PROJECT</h1>
+                    <h1 id="project-title">EMPTECH PROJECT</h1>
                     <nav>
                         <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="waffen.html">Lead</a></li>
-                            <li><a href="documentaton.html">Documentation</a></li>
+                            <li class="floater" id="about-index"><a href="about.html">About</a></li>
+                            <li class="floater"><a href="index.html">Home</a></li>
+                            <li id="homehome" class="floater"><a href="waffen.html">Lead</a></li>
+                            <li class="floater"><a href="documentaton.html">Documentation</a></li>
                             <li><button id="darkmode"><i class="fa-regular fa-5x fa-moon" id="togglebutton"></button></i></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-        <div class="contents">
-            <div class="content-container">
-                <h2>ICT STUDENTS</h2>
-                <div class="section">
-                    <p class="name">Waffen Ampatua</p>
-                    <div class="image"><img src="https://media.discordapp.net/attachments/766879854842871832/1024595710802399322/20220922_115308_218x197.jpg" alt="picture"></div>
-                    <div class="social-box">
-                        <a href="https://github.com/Waffenffs" target="_blank"><img src="https://media.discordapp.net/attachments/766879854842871832/1024649323239182376/unknown.png" alt="link" id="github" class="social"></a>
-                        <a href="https://facebook.com/waffenSA" target="_blank"><img src="https://media.discordapp.net/attachments/766879854842871832/1025303822417006603/Facebook-logo_62x32.png" alt="facebook" class="social"></a>
-                        <a href="https://www.codewars.com/users/satis" target="_blank"><img src="https://media.discordapp.net/attachments/766879854842871832/1024653368863502419/unknown.png" alt="codewars" class="social"></a>
+        <div class="container">
+        </div>
+        <div class="navigation-bar">
+            <nav>
+                <ul class="caloocan">
+                    <li>Blogs</li>
+                    <li>Stories</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cardcontainer">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>The future of ICT</h1>
                     </div>
-                    <p class="name">Project Lead</p>
-                    <p class="biography">I like computers and have been so for the past years of my life. I have a liking in problem solving. I like code. I like money. Ranked 5 kyu on Codewars. I also coded this site barebones. They call me the BIG T.</p>
-                    <a href="waffen.html"><button type="button" class="main-button button-waffen">Why did they choose ICT?</button></a>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquid nam, neque possimus sapiente culpa ut minima! Tenetur ut ex velit doloremque fugiat omnis molestias. Praesentium veritatis eum ipsa labore.</p>
+                    </div>
                 </div>
-                <div class="section">
-                    <p class="name">JF Kennedy</p>
-                    <div class="image"><img src="https://media.discordapp.net/attachments/766879854842871832/1024616620733243392/received_1648072402246624_218x197.jpg" alt="picture"></div>
-                    <div class="social-box"><a href="https://facebook.com/izushiroto" target="_blank"><img src="https://media.discordapp.net/attachments/766879854842871832/1025303822417006603/Facebook-logo_62x32.png" alt="facebook" class="social"></a></a></div>
-                    <p class="name">Member</p>
-                    <p class="biography">i like automobiles</p>
-                    <a href="kennedy.html"><button type="button" class="main-button button-jf">Why did they choose ICT?</button></a>
+                <div class="card">
+                    <div class="card-header">
+                        <h1>The future of technology</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquid nam, neque possimus sapiente culpa ut minima! Tenetur ut ex velit doloremque fugiat omnis molestias. Praesentium veritatis eum ipsa labore.</p>
+                    </div>
                 </div>
-                <div class="section">
-                    <p class="name">Jhon Vincent</p>
-                    <div class="image"><img src="https://media.discordapp.net/attachments/766879854842871832/1024611746687758376/1658407398637_218x197.jpg" alt="picture"></div>
-                    <div class="social-box"><a href="https://facebook.com/profile.php?id=100007270607280" target="_blank"><img src="https://media.discordapp.net/attachments/766879854842871832/1025303822417006603/Facebook-logo_62x32.png" alt="facebook" class="social"></a></a></div>
-                    <p class="name">Member</p>
-                    <p class="biography">Hello I'm Vincent I have small knowledge about html, and also I want to sharpen my knowledge about coding and programming.</p>
-                    <a href="jhon.html"><button type="button" class="main-button button-john">Why did they choose ICT?</button></a>
-                </div>
-                <div class="section">
-                    <p class="name">Sandee Cuuya</p>
-                    <div class="image"><img src="https://media.discordapp.net/attachments/766879854842871832/1024624145343971358/received_809431506871472_218x197.jpg" alt="picture"></div>
-                    <div class="social-box"><a href="https://facebook.com/profile.php?id=100070440095996" target="_blank"><img src="https://media.discordapp.net/attachments/766879854842871832/1025303822417006603/Facebook-logo_62x32.png" alt="facebook" class="social"></a></div>
-                    <p class="name">Member</p>
-                    <p class="biography">i love coding so much</p>
-                    <a href="sasen.html"><button type="button" class="main-button button-sasen">Why did they choose ICT?</button></a>
-                </div>
-                <div class="section">
-                    <p class="name">Balbeo Edzel</p>
-                    <div class="image"><img src="https://media.discordapp.net/attachments/766879854842871832/1024634848389906543/308461652_1388398048357425_6389409310875727589_n_218x197.jpg" alt="picture"></div>
-                    <div class="social-box"><a href="https://facebook.com/edzel.balleras" target="_blank"><img src="https://media.discordapp.net/attachments/766879854842871832/1025303822417006603/Facebook-logo_62x32.png" alt="facebook" class="social"></a></div>
-                    <p class="name">Member</p>
-                    <p class="biography">Moderately kind, handsome but not too much and simple.</p>
-                    <a href="balbeo.html"><button type="button" class="main-button button-balbeo">Why did they choose ICT?</button></a>
-                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h1>The future of laptop</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquid nam, neque possimus sapiente culpa ut minima! Tenetur ut ex velit doloremque fugiat omnis molestias. Praesentium veritatis eum ipsa labore.</p>
+                    </div>
                 </div>
             </div>
+            </div>
+            </div>
         </div>
-        <script>
-            var dark = document.getElementById("darkmode");
-
-            dark.onclick = function(){
-                document.body.classList.toggle("dark-theme");
-                if (document.getElementById("github").src == 'https://media.discordapp.net/attachments/766879854842871832/1024649323239182376/unknown.png') {
-                    document.getElementById("github").src = 'https://media.discordapp.net/attachments/766879854842871832/1025000143432470558/GitHub-Mark-32px.png'
-                } else {
-                    document.getElementById("github").src = 'https://media.discordapp.net/attachments/766879854842871832/1024649323239182376/unknown.png'
-                }
-                if (document.getElementById("togglebutton").className == 'fa-regular fa-5x fa-moon') {
-                    document.getElementById("togglebutton").className = 'fa-regular fa-5x fa-sun';
-                } else {
-                    document.getElementById("togglebutton").className = 'fa-regular fa-5x fa-moon';
-                }
-            }
-        </script>
+        
     </body>
+    <script>
+        
+    </script>
 </html>
