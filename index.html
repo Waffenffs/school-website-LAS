@@ -25,12 +25,6 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    
-    border-style: solid;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-bottom-color: #1b1b32;
     transition: (10.2s);
 }
 
@@ -147,7 +141,6 @@ nav ul li a {
 .main-button:hover {
     box-shadow: inset 280px 0 0 0 var(--tertiary-color);
 }
-
 
 .section:hover {
     transform: scale(1.1);
@@ -315,7 +308,116 @@ img {
     padding-bottom: 10px;
 }
 
+.title {
+  text-align: center;
+  margin-right: 60px;
+}
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  margin-bottom: 10px;
+
+}
+
+.title h3{
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.column-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  height: 800px;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+.panel {
+  padding: 5%;
+  box-shadow: 0px 0px 18px -8px rgba(118, 130, 182, 1);
+  border-radius: 10px;
+  color: var(--tertiary-color);
+  background: var(--primary-color);
+}
+
+span.date {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.breaker {
+  display: inline-block;
+  height: 5px;
+  background: var(--secondary-color);
+  width: 30px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.breaker:after {
+  position: absolute;
+  content: "";
+  background: var(--secondary-color);
+  width: 30px;
+  height: 5px;
+  left: 150%;
+  border-radius: 4px;
+}
+
+a.director {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  border-radius: 10px;
+  background: var(--secondary-color);
+  text-decoration: none;
+  color: var(--primary-color)
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.contacts-container {
+  width: 100%;
+  background: var(--primary-color);
+  border-style: solid;
+  border-color: var(--secondary-color);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.directory {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+hr {
+    border-style: solid;
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    border-radius: 5px;
+    height: 5px;
+}
 
 </style>
     <head>
@@ -338,49 +440,56 @@ img {
                 </div>
             </div>
         </div>
-        <div class="container">
-        </div>
+        <div class="container"></div>
         <div class="navigation-bar">
             <nav>
                 <ul class="caloocan">
                     <li>Blogs</li>
-                    <li>Stories</li>
+                    <li>Software</li>
+                    <li>Hardware</li>
                 </ul>
             </nav>
         </div>
-        <div class="cardcontainer">
-            <div class="row">
-                <div class="card">
-                    <div class="card-header">
-                        <h1>The future of ICT</h1>
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquid nam, neque possimus sapiente culpa ut minima! Tenetur ut ex velit doloremque fugiat omnis molestias. Praesentium veritatis eum ipsa labore.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h1>The future of technology</h1>
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquid nam, neque possimus sapiente culpa ut minima! Tenetur ut ex velit doloremque fugiat omnis molestias. Praesentium veritatis eum ipsa labore.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h1>The future of laptop</h1>
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquid nam, neque possimus sapiente culpa ut minima! Tenetur ut ex velit doloremque fugiat omnis molestias. Praesentium veritatis eum ipsa labore.</p>
-                    </div>
-                </div>
+        <div class="title"><h3>Our Blogs</h3></div>
+        <div class="card-container">
+          <div class="column-cards">
+            <div class="card">
+              <img src="images/naneto.jpg" alt="image">
+              <div class="panel">
+                <span class="date">October 12, 2022</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quo blanditiis neque, animi quaerat magnam libero dolorum unde commodi quas consectetur. Debitis assumenda saepe corrupti libero officia amet inventore quis?</p>
+                <hr>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <div class="directory"><a href="" class="director">Learn More</a></div>
+              </div>
             </div>
+            <div class="card">
+              <img src="images/naneto2.jpeg" alt="image">
+              <div class="panel">
+                <span class="date">October 13, 2022</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at dolores, praesentium atque aperiam, quis voluptatum facere fuga blanditiis perferendis magni quia sed recusandae sunt dolore unde ratione?</p>
+                <hr>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <div class="directory"><a href="" class="director">Learn More</a></div>
+              </div>
             </div>
+            <div class="card">
+              <img src="images/naneto3.jpg" alt="image">
+              <div class="panel">
+                <span class="date">October 14, 2022</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at dolores, praesentium atque aperiam, quis voluptatum facere fuga blanditiis perferendis magni quia sed recusandae sunt dolore unde ratione?</p>
+                <hr>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <div class="directory"><a href="" class="director">Learn More</a></div>
+              </div>
             </div>
+          </div>
         </div>
-        
+        <footer>
+          <div class="contacts-container">tanigna mo</div>
+        </footer>
     </body>
     <script>
-        
+
     </script>
 </html>
