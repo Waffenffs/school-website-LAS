@@ -419,6 +419,142 @@ hr {
     height: 5px;
 }
 
+.image-background {
+    background-image: url(https://media.discordapp.net/attachments/766879854842871832/1030806374977900664/pattern-minimalist-background-triangle-retro-vector-10891706-removebg-preview.png);
+    background-size: auto;
+    background-position: center;
+}
+
+
+.contacts-contacts-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.contacts-contacts-container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contacts-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url(https://media.discordapp.net/attachments/766879854842871832/1030814843101532221/2806.jpg?width=663&height=497) no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: var(--secondary-color);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+.title-ni-idolo {
+    color: var(--tertiary-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.straightline {
+    border-style: solid;
+    border-color: var(--secondary-color);
+    margin-right: 570px;
+    margin-left: 570px;
+    border-radius: 8px;
+}
+
+.straightline::after {
+    content: "";
+}
+
 </style>
     <head>
         <link rel="stylesheet" href="css/all.min.css">
@@ -441,55 +577,78 @@ hr {
             </div>
         </div>
         <div class="container"></div>
-        <div class="navigation-bar">
-            <nav>
-                <ul class="caloocan">
-                    <li>Blogs</li>
-                    <li>Software</li>
-                    <li>Hardware</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="title"><h3>Our Blogs</h3></div>
-        <div class="card-container">
-          <div class="column-cards">
-            <div class="card">
-              <img src="images/naneto.jpg" alt="image">
-              <div class="panel">
-                <span class="date">October 12, 2022</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quo blanditiis neque, animi quaerat magnam libero dolorum unde commodi quas consectetur. Debitis assumenda saepe corrupti libero officia amet inventore quis?</p>
-                <hr>
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <div class="directory"><a href="" class="director">Learn More</a></div>
-              </div>
+            <div class="navigation-bar">
+                <nav>
+                    <ul class="caloocan">
+                        <li>Blogs</li>
+                        <li>Software</li>
+                        <li>Hardware</li>
+                    </ul>
+                </nav>
             </div>
-            <div class="card">
-              <img src="images/naneto2.jpeg" alt="image">
-              <div class="panel">
-                <span class="date">October 13, 2022</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at dolores, praesentium atque aperiam, quis voluptatum facere fuga blanditiis perferendis magni quia sed recusandae sunt dolore unde ratione?</p>
-                <hr>
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <div class="directory"><a href="" class="director">Learn More</a></div>
-              </div>
+            <div class="image-background">
+            <div class="title">
+                <h3>Our Blogs</h3>
             </div>
-            <div class="card">
-              <img src="images/naneto3.jpg" alt="image">
-              <div class="panel">
-                <span class="date">October 14, 2022</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at dolores, praesentium atque aperiam, quis voluptatum facere fuga blanditiis perferendis magni quia sed recusandae sunt dolore unde ratione?</p>
-                <hr>
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <div class="directory"><a href="" class="director">Learn More</a></div>
-              </div>
+            <div class="card-container">
+            <div class="column-cards">
+                <div class="card">
+                <img src="images/naneto.jpg" alt="image">
+                <div class="panel">
+                    <span class="date">Current Trends in Computer MOBOs</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quo blanditiis neque, animi quaerat magnam libero dolorum unde commodi quas consectetur. Debitis assumenda saepe corrupti libero officia amet inventore quis?</p>
+                    <hr>
+                    <h3>JF Kennedy</h3>
+                    <div class="directory"><a href="" class="director">Learn More</a></div>
+                </div>
+                </div>
+                <div class="card">
+                <img src="images/naneto2.jpeg" alt="image">
+                <div class="panel">
+                    <span class="date">Solutions to Common Problems</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at dolores, praesentium atque aperiam, quis voluptatum facere fuga blanditiis perferendis magni quia sed recusandae sunt dolore unde ratione?</p>
+                    <hr>
+                    <h3>John Vincent</h3>
+                    <div class="directory"><a href="" class="director">Learn More</a></div>
+                </div>
+                </div>
+                <div class="card">
+                <img src="images/naneto3.jpg" alt="image">
+                <div class="panel">
+                    <span class="date">Why Drake is the GOAT</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at dolores, praesentium atque aperiam, quis voluptatum facere fuga blanditiis perferendis magni quia sed recusandae sunt dolore unde ratione?</p>
+                    <hr>
+                    <h3>Waffen Ampatua</h3>
+                    <div class="directory"><a href="" class="director">Learn More</a></div>
+                </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
         <footer>
-          <div class="contacts-container"></div>
+          <div class="contacts-container">
+            <div class="title-ni-idolo">
+                <h1>Contact Us</h1>
+                <div class="straightline"></div>
+            </div>
+            <div class="contacts-contacts-container">
+                <div class="contacts-box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <input type="text" class="field" placeholder="Your Name">
+                        <input type="text" class="field" placeholder="Your Email">
+                        <input type="text" class="field" placeholder="Phone">
+                        <textarea placeholder="Your message...." class="field">
+
+                        </textarea>
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+          </div>
         </footer>
     </body>
     <script>
-
+        
     </script>
 </html>
